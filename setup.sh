@@ -11,14 +11,13 @@ red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
 MYIP=$(wget -qO- icanhazip.com);
-IZIN=$( curl http://www.ipang.live/index.html | grep $MYIP )
+IZIN=$( curl http://www.janda-baper.my.id/index.html | grep $MYIP )
 if [ $MYIP = $IZIN ]; then
 echo -e "${green}Permission Accepted...${NC}"
 else
 echo -e "${red}Permission Denied!${NC}";
 echo "Please Contact Admin"
-echo "Telegram t.me/horasss"
-echo "WhatsApp wa.me/6282381643124"
+echo "Telegram t.me/jessy009"
 rm -f setup.sh
 exit 0
 fi
@@ -114,15 +113,14 @@ echo "   - Full Orders For Various Services" | tee -a log-install.txt
 echo "   - White Label" | tee -a log-install.txt
 echo "   - Installation Log --> /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "   - Dev/Main                : Horas Marolop Amsal Siregar"  | tee -a log-install.txt
-echo "   - Telegram                : T.me/Horasss"  | tee -a log-install.txt
-echo "   - Instagram               : @horas_96"  | tee -a log-install.txt
-echo "   - Whatsapp                : 082386143124"  | tee -a log-install.txt
-echo "   - Facebook                : https://www.facebook.com/Marlosirega" | tee -a log-install.txt
-echo "------------------Script Created By Horas Marolop Amsal Siregar-----------------" | tee -a log-install.txt
+echo "   - Mod                     : Janda Baper"  | tee -a log-install.txt
+echo "   - Telegram                : T.me/jessy009"  | tee -a log-install.txt
+echo "   - Instagram               : @jessy009"  | tee -a log-install.txt
+echo "   - Facebook                : https://www.facebook.com/johnliqui09" | tee -a log-install.txt
+echo "--------------------------------------------------------------------------------" | tee -a log-install.txt
 echo ""
-echo " Reboot 15 Sec"
-sleep 15
+#echo " Reboot 15 Sec"
+#sleep 15
 rm -f setup.sh
-reboot
+#reboot
 
